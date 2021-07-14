@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+}
+/* header-styles */
+.header-1{
+    width:1440;
+    height: 677px;
+    background-color: #2d25a0;
+}
+.section-1{
+    display: flex;
+}
+.copa{
+    width: 50%; 
+}
+.copa img{
+    width: 556px;
+    height: 438px;
+    margin-top: 153px;
+    margin-left: 120px;
+}
+.copa a{
+    width: 200px;
+    height: 40px;
+    padding: 15px 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #e02c6d;
+    line-height: 23px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+.copa a:hover{
+    transform: scale(.90);
+}
+.text{
+    width: 485px;
+    height: 230px;
+    color: #FFFFFF;
+    font-style: italic;
+font-size: 35px;
+margin-top: 121px;
+margin-left: 240px;
+}
+/* players-styles */
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 200px;
+    margin-left: 190px; 
+    grid-gap: 40px; 
+}
+.player{
+   width:330px;
+   height: 474px;
+   padding: 11px;
+   margin-top: 70px;
+   border: 5px solid whitesmoke;
+   border-radius: 3px;
+   box-shadow: 0px 0px 2px 2px rgb(211, 211, 211);
+}
+.player img{
+    width: 100%;
+}
+/* it's footer */
+.logo img{
+    width: 483px;
+   margin-right: 481px;
+   margin-left: 475px;
+}
+.logo{
+     display: flex;
+}
+.awesome{
+    text-align: center;
+    font-size: 25px;
+}
+.para{
+    text-align: center;
+    font-size: 25px;
+}
+/* Media Querises */
+
+/* Mobile Devices */
+@media only  screen and (max-width:688px) {
+    .section-1, copa, text{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+     .player, logo, awesome{
+        grid-template-columns: repeat(1,1fr);
+     }
+}
